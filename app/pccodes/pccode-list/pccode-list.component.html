@@ -1,0 +1,21 @@
+<table class="table table-hover">
+    <thead>
+        <th>PCCode</th>
+        <th>PCCode Desc</th>
+        <th>Entity</th>
+        <th>Location</th>
+        <th>LOB</th>
+        <th></th>
+    </thead>
+    <tbody>
+     <tr *ngFor="let pccde of list">
+        <td (click)="onEdit(pccde)">{{pccde.PCCode}}</td>
+        <td (click)="onEdit(pccde)">{{pccde.PCCodeDesc}}</td>
+        <td (click)="onEdit(pccde)">{{pccde.Entity}}</td>
+        <td (click)="onEdit(pccde)">{{pccde.Location}}</td>
+        <td (click)="onEdit(pccde)">{{pccde.LOB}}</td>
+        <td><a class="btn text-danger" (click)="onDelete(pccde.id)"><i class="fa fa-trash"></i></a></td>
+     </tr>
+
+    </tbody>
+</table>

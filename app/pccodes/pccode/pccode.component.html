@@ -1,0 +1,24 @@
+<h1 class="display-4">PC Code.Register</h1>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+        <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+    <div class="form-group">
+        <input name="PCCode" #PCCode="ngModel" [(ngModel)]="service.formData.PCCode" class="form-control" placeholder="PCCode" required>
+        <div *ngIf="PCCode.invalid && PCCode.touched" class="validation-error">This field is required.</div>
+    </div>
+    <div class="form-group">
+        <input name="PCCodeDesc" #PCCodeDesc="ngModel" [(ngModel)]="service.formData.PCCodeDesc" class="form-control" placeholder="PCCodeDesc">
+    </div>
+    <div class="form-group">
+        <input name="Entity" #Entity="ngModel" [(ngModel)]="service.formData.Entity" class="form-control" placeholder="Entity">
+    </div>
+    <div class="form-group">
+        <input name="Location" #Location="ngModel" [(ngModel)]="service.formData.Location" class="form-control" placeholder="Location">
+    </div>
+    <div class="form-group">
+        <input name="LOB" #LOB="ngModel" [(ngModel)]="service.formData.LOB" class="form-control" placeholder="LOB">
+    </div>
+    <div class="form-group">
+        <button type="submit"[disabled]="form.invalid" class="btn btn-lg btn-block btn-info">SUBMIT</button>
+    </div>
+</form>
+

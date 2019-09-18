@@ -1,0 +1,19 @@
+• src
++---• app
+|   +--• pccodes
+|   |  |--pccodes.component.ts|.html
+|   |  +--• pccode
+|   |  |  |--pccode.component.ts|.html
+|   |  +--• pccode-items
+|   |  |  |--pccode-items.component.ts|.html
+|   |  |
+|   |  +--• shared
+|   |     |--pccode.model.ts
+|   |     |--pccode.service.ts
+|   |
+|   |--app.module.ts
+|
++---• environments
+|   |--environment.ts (saved apiUrl)
+|
+|--index.html (cdn path for bootstarp and font awesome icon)
